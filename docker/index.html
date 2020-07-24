@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--系统内置 start-->
+<!--系统内置 end-->
+        <meta charset="utf-8">
+        <title>靶机开启</title>
+        <link rel="stylesheet" href="./index.css">
+    </head> 
+    <body> 
+        <div class="box"> 
+            <h1>欢迎来到网络攻防实践平台</h1>
+       <form action = "./curl.php" method="post"> 
+            <div> <span>使用时间：</span><input type="time" name="TTL" step="00:01:00" value="00:01:00"  max="03:00:00" min="00:01:00"></div>
+            <div><span>选择靶机: </span>
+                <select name="image_name">
+                        <option value="dvwa">dvwa</option>
+                        <option value="sqlilabs">sqli-labs</option>
+                        <option value="uploadlabs">upload-labs</option>
+                </select>
+            </div>
+            <button >提交</button>
+            <li class="warning">由于靶机生成需要时间,建议刷新之后使用</li>
+        </form>
+        <ul class="bg-bubbles">  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+            <li></li>  
+        </ul>  
+    </div>  
+    </body>
+</html>
